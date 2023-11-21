@@ -64,7 +64,7 @@ void PointcloudConcatenate::handleParams() {
   param_name = node_name_ + "/target_frame";
   ros::param::get(param_name, parse_str);
   if (!parse_str.length() > 0) {
-    param_frame_target_ = "base_link";
+    param_frame_target_ = "map";
     ROSPARAM_WARN(param_name, param_frame_target_);
   }
   param_frame_target_ = parse_str;

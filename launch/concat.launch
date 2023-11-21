@@ -1,9 +1,9 @@
 <launch>
   <!-- Arguments -->
-  <arg name="target_frame" default="base_link" />
-  <arg name="cloud_in1" default="/camera_front/depth/points" />
-  <arg name="cloud_in2" default="/camera_up/depth/points" />
-  <arg name="cloud_in3" default="/camera_down/depth/points" />
+  <arg name="target_frame" default="map" />
+  <arg name="cloud_in1" default="/tb3_0/velodyne_points" />
+  <arg name="cloud_in2" default="/tb3_1/velodyne_points" />
+  <arg name="cloud_in3" default="/tb3_2/velodyne_points" />
   <arg name="cloud_in4" default="/pointcloud4" />
   <arg name="cloud_out" default="cloud_concatenated" />
 
